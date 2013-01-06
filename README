@@ -1,0 +1,20 @@
+This project is an example on how to use an AlertDialog in a DialogFragment using android.support.v4.app.DialogFragment
+(for backward compatibility on pre-Honeycomb devices), which shows your current location (latitude, longitude).
+
+This app was tested on smartphone Acer Liquid Galant Black with Android 4.0 Ice Cream Sandwich
+and on HTC Sensation Android 4.0.3
+
+=> still to be tested for Android versions < 4.0!
+
+The AlertDialog that is implented shows the location settings, that can be used to switch on the GPS setting.
+
+
+This example was based on two examples I found:
+
+1.http://code.google.com/p/dialogfragmentdemo/
+
+2.http://www.androidhive.info/2012/07/android-gps-location-manager-tutorial/
+=> this uses android.app.AlertDialog
+
+Here you can find the original GPSTracker.java file which I slightly changed:
+I removed the procedure showSettingsAlert and kind of reimplemented it in the GpsDialogFragment.java file

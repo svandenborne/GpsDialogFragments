@@ -7,8 +7,6 @@ import android.view.Menu;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.gpsfragmentdialog.R;
-
 public class MainActivity extends FragmentActivity {
 	
 	Button btnShowLocation;

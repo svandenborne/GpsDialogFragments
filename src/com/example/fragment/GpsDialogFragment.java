@@ -1,7 +1,5 @@
 package com.example.fragment;
 
-import com.example.gpsfragmentdialog.R;
-
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;

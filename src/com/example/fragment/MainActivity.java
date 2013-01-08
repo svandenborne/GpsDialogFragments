@@ -8,8 +8,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends FragmentActivity {
-	
-	Button btnShowLocation;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -35,14 +33,10 @@ public class MainActivity extends FragmentActivity {
         	double latitude = gps.getLatitude();
         	double longitude = gps.getLongitude();
         	
-        	// \n is for new line
-        	//Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
-        	
         	TextView locationView = (TextView) findViewById(R.id.text_location);
     	    locationView.setText("Your Location is - \nLat: " + latitude + "\nLong: " + longitude);
         }else{
-        	// can't get location
-        	// GPS or Network is not enabled
+        	// can't get location; GPS or Network is not enabled
         	// Ask user to enable GPS/network in settings
         	showGpsAlert();
         }
